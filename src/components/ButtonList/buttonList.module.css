@@ -1,0 +1,28 @@
+.button_game {
+    padding: 0;
+    width: 200px;
+    height: 200px;
+    border: none;
+    flex-basis: calc((100% - 16px) / 3);
+    font-size: 160px;
+    font-weight: 700;
+
+}
+
+.container_button_game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    max-width: 640px;
+    background-color: black;
+}
+
+.container_game {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
