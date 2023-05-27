@@ -19,8 +19,7 @@ export const Button = ({ onClick, id, player, newGame }) => {
       className={css.button_game}
       onClick={handelStep}
       style={{
-        color: (step === 'X' && 'black') || (step === 'O' && 'blue'),
-        backgroundColor: (step === 'X' && 'red') || (step === 'O' && 'yellow'),
+        color: (step === 'X' && 'red') || (step === 'O' && 'black'),
       }}
       disabled={!newGame && step}
     >

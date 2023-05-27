@@ -14,15 +14,16 @@
 .modal {
     width: 640px;
     height: 616px;
-    background-color: rgba(0, 255, 255, 0.267);
     display: flex;
     justify-content: center;
-    /* align-items: center; */
+    align-items: center;
+    background-color: #cebb56;
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
 
 .titleModal {
-    font-size: 40px;
-    color: rgb(0, 0, 0);
+    font-size: 60px;
+    background-color: bisque;
+    color: black;
 }

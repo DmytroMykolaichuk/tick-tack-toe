@@ -1,12 +1,13 @@
 .button_game {
     /* border-radius: 30%; */
     padding: 0;
-    width: 208px;
-    height: 200px;
+    width: 200px;
+    height: 180px;
     border: none;
     flex-basis: calc((100% - 16px) / 3);
     font-size: 160px;
     font-weight: 700;
+    background-color: beige;
 }
 
 .container_button_game {
@@ -16,7 +17,7 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 8px;
-    max-width: 640px;
+    max-width: 556px;
     background-color: black;
 }
 
@@ -27,13 +28,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #575e64;
-    background-image: url('../../image/tic-tac-toe-geaf746879_1280.jpg');
-    /* url('../../image/tic-tac-toe-ga80e2fdfb_1280.jpg'),
-        url('../../image/tic-tac-toe-geaf746879_1280.jpg'), */
-    /* url('../../image/tic-tac-toe-gfcecbdba9_1280.jpg'); */
-    /* background-position: top right, top left, bottom left, bottom right; */
+    background-image:
+        radial-gradient(circle at center,
+            rgb(0, 0, 0)10%,
+            rgba(255, 255, 255, 0)),
+        url('../../image/background.webp');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 1280px 100%;
+    background-size: 100% 100%;
 }
