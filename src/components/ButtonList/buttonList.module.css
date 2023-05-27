@@ -1,15 +1,16 @@
 .button_game {
+    /* border-radius: 30%; */
     padding: 0;
-    width: 200px;
+    width: 208px;
     height: 200px;
     border: none;
     flex-basis: calc((100% - 16px) / 3);
     font-size: 160px;
     font-weight: 700;
-
 }
 
 .container_button_game {
+    /* border-radius: 30%; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,9 +21,19 @@
 }
 
 .container_game {
+    position: relative;
     width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #575e64;
+    background-image: url('../../image/tic-tac-toe-geaf746879_1280.jpg');
+    /* url('../../image/tic-tac-toe-ga80e2fdfb_1280.jpg'),
+        url('../../image/tic-tac-toe-geaf746879_1280.jpg'), */
+    /* url('../../image/tic-tac-toe-gfcecbdba9_1280.jpg'); */
+    /* background-position: top right, top left, bottom left, bottom right; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 1280px 100%;
 }
