@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import css from './GameButton.module.css';
+import { ButtonGame } from './GameButton.js';
 
 export const Button = ({ onClick, id, player, newGame }) => {
   const [step, setStep] = useState(null);
@@ -15,8 +15,7 @@ export const Button = ({ onClick, id, player, newGame }) => {
     onClick(id, player);
   }
   return (
-    <button
-      className={css.button_game}
+    <ButtonGame
       onClick={handelStep}
       style={{
         color: (step === 'X' && 'red') || (step === 'O' && 'black'),
@@ -24,6 +23,6 @@ export const Button = ({ onClick, id, player, newGame }) => {
       disabled={!newGame && step}
     >
       {!newGame && step}
-    </button>
+    </ButtonGame>
   );
 };

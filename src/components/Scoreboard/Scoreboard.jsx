@@ -1,4 +1,11 @@
-import css from './Scoreboard.module.css';
+import {
+  Title,
+  ScoreboardList,
+  Result,
+  Number,
+  Container,
+  Restart,
+} from './Scoreboard.js';
 import { TfiReload } from 'react-icons/tfi';
 
 export function Scoreboard({
@@ -8,30 +15,28 @@ export function Scoreboard({
   resetScoreboard,
 }) {
   return (
-    <div className={css.container}>
-      <button className={css.restart} type="button" onClick={resetScoreboard}>
+    <Container>
+      <Restart type="button" onClick={resetScoreboard}>
         <TfiReload size={26} />
-      </button>
-      <p className={css.title}>Scoreboard</p>
-      <ul className={css.scoreboardList}>
+      </Restart>
+      <Title>Scoreboard</Title>
+      <ScoreboardList>
         <li>
-          <p className={css.result}>
-            {firstPlayer || 'Player 1'}:
-            <span className={css.number}> {scorePlayerOne}</span>
-          </p>
+          <Result>
+            {firstPlayer || 'Player 1'}:<Number> {scorePlayerOne}</Number>
+          </Result>
         </li>
         <li>
-          <p className={css.result}>
-            {secondPlayer || 'Player 2'}:
-            <span className={css.number}> {scorePlayerTwo}</span>
-          </p>
+          <Result>
+            {secondPlayer || 'Player 2'}:<Number> {scorePlayerTwo}</Number>
+          </Result>
         </li>
         <li>
-          <p className={css.result}>
-            Draw:<span className={css.number}> {scoreDraw}</span>
-          </p>
+          <Result>
+            Draw:<Number> {scoreDraw}</Number>
+          </Result>
         </li>
-      </ul>
-    </div>
+      </ScoreboardList>
+    </Container>
   );
 }

@@ -1,10 +1,15 @@
 import { useState } from 'react';
-import css from './GameButton/GameButton.module.css';
-import { Button } from './GameButton/GameButton';
-import { ModalBanner } from './ModalBanner/ModalBanner';
-import { ResetGameBtn } from './ResetGameBtn/ResetGameBtn';
-import { FormNamePlayer } from './FormNamePlayer/FormNamePlayer';
-import { Scoreboard } from './Scoreboard/Scoreboard';
+import {
+  ContainerButtonField,
+  ContainerButtonGame,
+  ContainerGame,
+  ContainerMain,
+} from './App.js';
+import { Button } from './GameButton/GameButton.jsx';
+import { ModalBanner } from './ModalBanner/ModalBanner.jsx';
+import { ResetGameBtn } from './ResetGameBtn/ResetGameBtn.jsx';
+import { FormNamePlayer } from './FormNamePlayer/FormNamePlayer.jsx';
+import { Scoreboard } from './Scoreboard/Scoreboard.jsx';
 
 export const App = () => {
   const [player, setPlayer] = useState('X');
@@ -89,20 +94,20 @@ export const App = () => {
   }
 
   return (
-    <div className={css.container_main}>
+    <ContainerMain>
       <Scoreboard
         resetScoreboard={resetScoreboard}
         firstPlayer={firstPlayer}
         secondPlayer={secondPlayer}
         score={{ scorePlayerOne, scorePlayerTwo, scoreDraw }}
       />
-      <div className={css.container_game}>
+      <ContainerGame>
         <FormNamePlayer
           defaultName={'Player 1'}
           getNamePlayer={getNamePlayer}
         />
-        <div className={css.container_button_game}>
-          <div className={css.container_button_field}>
+        <ContainerButtonGame>
+          <ContainerButtonField>
             {[0, 0, 0, 0, 0, 0, 0, 0, 0].map((_, index) => (
               <Button
                 key={index}
@@ -112,15 +117,15 @@ export const App = () => {
                 onClick={handleClick}
               ></Button>
             ))}
-          </div>
+          </ContainerButtonField>
           <ResetGameBtn onClick={resetGame} />
-        </div>
+        </ContainerButtonGame>
         <FormNamePlayer
           defaultName={'Player 2'}
           getNamePlayer={getNamePlayer}
         />
         {winner && <ModalBanner winner={winner} />}
-      </div>
-    </div>
+      </ContainerGame>
+    </ContainerMain>
   );
 };

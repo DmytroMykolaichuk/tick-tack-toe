@@ -1,4 +1,10 @@
-import css from './FormNamePlayer.module.css';
+import {
+  FormName,
+  LabelName,
+  NamePlayer,
+  InputName,
+  SubmitBtnName,
+} from './FormNamePlayer.js';
 import { FcPlus } from 'react-icons/fc';
 import { useState } from 'react';
 
@@ -17,20 +23,15 @@ export function FormNamePlayer({ defaultName, getNamePlayer }) {
 
   return (
     <div>
-      <form className={css.formName} onSubmit={handleSubmit}>
-        <label className={css.labelName}>
-          <span className={css.namePlayer}>{name || defaultName}</span>
-          <input
-            name="name"
-            type="text"
-            placeholder="Enter your name"
-            className={css.inputName}
-          />
-        </label>
-        <button type="submit" className={css.submitBtnName}>
+      <FormName onSubmit={handleSubmit}>
+        <LabelName>
+          <NamePlayer>{name || defaultName}</NamePlayer>
+          <InputName name="name" type="text" placeholder="Enter your name" />
+        </LabelName>
+        <SubmitBtnName type="submit">
           <FcPlus size={'24px'} />
-        </button>
-      </form>
+        </SubmitBtnName>
+      </FormName>
     </div>
   );
 }
