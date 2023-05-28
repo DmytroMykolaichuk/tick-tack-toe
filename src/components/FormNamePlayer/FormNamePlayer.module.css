@@ -1,0 +1,37 @@
+.formName {
+    display: flex;
+    align-items: flex-end;
+}
+
+.labelName {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 25px;
+    font-weight: 700;
+    color: black;
+    text-align: center;
+}
+
+.submitBtnName {
+    width: 40px;
+    height: 32px;
+    cursor: pointer;
+    border: 1px black solid;
+    border-left: none;
+    background-color: azure;
+}
+
+.inputName {
+    height: 30px;
+    padding: 0;
+    padding-left: 5px;
+    border: 1px black solid;
+    border-right: none;
+    background-color: azure;
+}
+
+.namePlayer {
+    background-color: antiquewhite;
+    max-width: 100%;
+}

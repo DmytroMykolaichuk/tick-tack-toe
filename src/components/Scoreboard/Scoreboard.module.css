@@ -1,0 +1,48 @@
+.title {
+    padding: 5px 10px;
+    margin: 0;
+    color: black;
+    background-color: antiquewhite;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.scoreboardList {
+    display: flex;
+    gap: 20px;
+    padding: 0 20px;
+    list-style: none;
+    color: black;
+    background-color: antiquewhite;
+    text-align: center;
+    font-size: 30px;
+    margin: 0;
+}
+
+.result {
+    margin: 0;
+    padding: 0 10px;
+    background-color: azure;
+}
+
+.number {
+    color: red;
+    font-weight: 700;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.restart {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: azure;
+    cursor: pointer;
+    border-right: none;
+    border-bottom-left-radius: 50%;
+}

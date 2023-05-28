@@ -10,7 +10,7 @@
     background-color: beige;
 }
 
-.container_button_game {
+.container_button_field {
     /* border-radius: 30%; */
     display: flex;
     justify-content: center;
@@ -21,13 +21,25 @@
     background-color: black;
 }
 
+.container_button_game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
 .container_game {
     position: relative;
-    width: 100vw;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 30px;
+
+}
+
+.container_main {
+    width: 100vw;
+    height: 100vh;
     background-image:
         radial-gradient(circle at center,
             rgb(0, 0, 0)10%,
@@ -36,4 +48,9 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }

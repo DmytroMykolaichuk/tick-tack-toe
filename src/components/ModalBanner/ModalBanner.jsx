@@ -9,6 +9,8 @@ export const ModalBanner = ({ winner }) => {
         className={css.modal}
         style={{
           backgroundImage: `url(${winner === 'Draw' ? draw : win})`,
+          height: `${winner === 'Draw' ? '600px' : '425px'}`,
+          width: `${winner === 'Draw' ? '500px' : '640px'}`,
         }}
       >
         <h1 className={css.titleModal}>
