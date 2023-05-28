@@ -22,9 +22,14 @@ export const ContainerButtonGame = styled.div`
 export const ContainerGame = styled.div`
   position: relative;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 30px;
+  gap: 10px;
+  @media (min-width: 1070px) {
+    flex-direction: row;
+    gap: 30px;
+  }
 `;
 
 export const ContainerMain = styled.div`

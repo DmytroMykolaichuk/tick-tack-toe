@@ -10,4 +10,5 @@ export const ResetBtn = styled.button`
   align-items: center;
   gap: 8px;
   background-color: azure;
+  border-radius: 30px;
 `;

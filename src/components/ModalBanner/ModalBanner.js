@@ -16,14 +16,30 @@ export const Backdrop = styled.div`
 export const Modal = styled.div`
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   background-color: #cebb56;
   background-repeat: no-repeat;
   background-size: cover;
+  width: 300px;
+  height: 200px;
+  @media (min-width: 450px) {
+    width: 400px;
+    height: 350px;
+  }
+  @media (min-width: 550px) {
+    width: 500px;
+    height: 425px;
+  }
+  @media (min-width: 1070px) {
+    width: 600px;
+  }
 `;
 
 export const TitleModal = styled.h1`
-  font-size: 60px;
   background-color: bisque;
   color: black;
+  font-size: 30px;
+  @media (min-width: 450px) {
+    font-size: 60px;
+  }
 `;

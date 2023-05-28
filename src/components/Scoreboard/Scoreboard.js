@@ -8,18 +8,25 @@ export const Title = styled.p`
   text-align: center;
   font-size: 30px;
   font-weight: 700;
+  border-top-left-radius: 30px;
 `;
 
 export const ScoreboardList = styled.ul`
   display: flex;
-  gap: 20px;
-  padding: 0 20px;
+  gap: 10px;
+  padding: 0 10px;
   list-style: none;
   color: black;
   background-color: antiquewhite;
   text-align: center;
-  font-size: 30px;
+  font-size: 20px;
   margin: 0;
+
+  @media (min-width: 1070px) {
+    gap: 20px;
+    font-size: 30px;
+    padding: 0 20px;
+  }
 `;
 
 export const Result = styled.p`

@@ -8,8 +8,8 @@ export const ModalBanner = ({ winner }) => {
       <Modal
         style={{
           backgroundImage: `url(${winner === 'Draw' ? draw : win})`,
-          height: `${winner === 'Draw' ? '600px' : '425px'}`,
-          width: `${winner === 'Draw' ? '500px' : '640px'}`,
+          // height: `${winner === 'Draw' ? '600px' : '425px'}`,
+          // width: `${winner === 'Draw' ? '500px' : '640px'}`,
         }}
       >
         <TitleModal>{winner === 'Draw' ? 'Draw' : `Win ${winner}`}</TitleModal>
