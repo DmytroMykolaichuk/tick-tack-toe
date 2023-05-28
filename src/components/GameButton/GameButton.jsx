@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import css from './ButtonList.module.css';
+import css from './GameButton.module.css';
 
 export const Button = ({ onClick, id, player, newGame }) => {
   const [step, setStep] = useState(null);

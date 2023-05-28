@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import css from './ButtonList/ButtonList.module.css';
-import { Button } from './ButtonList/ButtonList';
+import css from './GameButton/GameButton.module.css';
+import { Button } from './GameButton/GameButton';
 import { ModalBanner } from './ModalBanner/ModalBanner';
 import { ResetGameBtn } from './ResetGameBtn/ResetGameBtn';
 import { FormNamePlayer } from './FormNamePlayer/FormNamePlayer';
